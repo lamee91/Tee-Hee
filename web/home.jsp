@@ -5,15 +5,14 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Home Page</title>
 
-        <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/home.css" />
-        <link rel="stylesheet" href="css/footer.css" />
         <link rel="stylesheet" href="css/boarding-process.css" />
         <link rel="stylesheet" href="css/cabin-type.css" />
 
@@ -26,35 +25,7 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header class="container">
-            <div class="logo"></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="">Cat Boarding</a>
-                        <ul>
-                            <li><a href="requirement.jsp">Boarding Requirements</a></li>
-                            <li><a href="Guide.jsp">Boarding Guide</a></li>
-                            <li><a href="boarding.jsp">Boarding Rates</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="news.html">Service</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="booking">
-                <input class="bookingbtn" type="button" value="Book Now" />
-            </div>
-            <div class="user">
-                <a href="login.jsp" class="login">Hello, Sign in</a>
-                <a href="order.jsp" class="order">Order</a>
-                <a href="cart.jsp" class="cart"
-                   ><i class="fa-regular fa-cart-shopping"></i> Cart</a
-                >
-            </div>
-        </header>
+        <jsp:include page="header.jsp"/>
         <!-- BODY -->
         <div class="body">
             <div class="image">
@@ -147,7 +118,7 @@
                         <p>From 108$</p>
                     </div>
                 </div>
-                <button><a href="boarding_rates.html">See Full Pricing</a></button>
+                <button><a href="boarding.jsp">See Full Pricing</a></button>
             </center>
             <!-- BOARDING PROCCESS -->
             <center class="boarding-process">
@@ -186,26 +157,6 @@
             <!-- SERVICE -->
         </div>
         <!-- FOOTER -->
-        <footer>
-            <div class="container">
-                <div>
-                    <h2>Contact</h2>
-                    <p>Hotline: 012345678</p>
-                    <p>Email: eochanghee@gmail.com</p>
-                </div>
-                <div>
-                    <h2>Location</h2>
-                    <p>S201 - Vinhome Grand Park - District 9 - Ho Chi Minh</p>
-                    <p>S105 - Vinhome Grand Park - District 9 - Ho Chi Minh</p>
-                </div>
-                <div>
-                    <h2>Opening hour</h2>
-                    <p>8 am - 6 pm (7 days)</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright © 2024 Neko Hee Hotel</p>
-            </div>
-        </footer>
+        <jsp:include page="footer.html"/>
     </body>
 </html>

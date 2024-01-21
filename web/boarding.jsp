@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
 
-        <link rel="stylesheet" href="css/boarding-rates.css" />
+        <link rel="stylesheet" href="css/boarding-rate.css" />
         <link rel="stylesheet" href="css/header.css" />
         <link rel="stylesheet" href="css/footer.css" />
 
@@ -28,7 +28,7 @@
             <div class="logo"></div>
             <div class="menu">
                 <ul>
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.jsp">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li class="dropdown">
                         <a href="">Cat Boarding</a>

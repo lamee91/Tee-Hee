@@ -22,7 +22,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class DispatchServlet extends HttpServlet {
    private final String HOME_PAGE = "home.jsp";
    private final String LOGIN_CONTROLLER = "LoginServlet";
-   private final String SEARCH_LASTNAME_CONTROLLER = "SearchLastnameServlet";
+   private final String REGISTRATION_CONTROLLER = "RegistrationServlet";
    private final String DELETE_CONTROLLER = "DeleteServlet";
    private final String UPDATE_CONTROLLER = "UpdateServlet";
    private final String CREATE_CONTROLLER = "CreateAccountServlet";
@@ -48,8 +48,8 @@ public class DispatchServlet extends HttpServlet {
 //               url = NULL_CONTROLLER;
            } else if (button.equals("Login")) {
                url = LOGIN_CONTROLLER;
-           } else if (button.equals("Search")) {
-               url = SEARCH_LASTNAME_CONTROLLER;             
+           } else if (button.equals("Registration")) {
+               url = REGISTRATION_CONTROLLER;             
            } else if (button.equals("Delete")) {
                url = DELETE_CONTROLLER;
            } else if (button.equals("Update")) {
