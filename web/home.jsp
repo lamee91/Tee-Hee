@@ -57,7 +57,7 @@
                         <h2>Search results</h2>
                         <div class="container">
                             <div>
-                                <a href="cabin.html">
+                                <a href="cabin.jsp">
                                     <img
                                         src="picture/CC_C3-scaled-e1695366218592.jpg"
                                         alt="classic cabin"

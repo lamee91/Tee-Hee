@@ -17,7 +17,7 @@
             <div class="logo"></div>
             <div class="menu">
                 <ul>
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="home.jsp">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li class="dropdown">
                         <a href="">Cat Boarding</a>

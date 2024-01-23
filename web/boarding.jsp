@@ -24,35 +24,7 @@
     </head>
     <body>
         <!-- HEADER -->
-        <header class="container">
-            <div class="logo"></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="home.jsp">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="">Cat Boarding</a>
-                        <ul>
-                            <li><a href="requirement.html">Boarding Requirements</a></li>
-                            <li><a href="Guide.html">Boarding Guide</a></li>
-                            <li><a href="boarding_rates.html">Boarding Rates</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="news.html">Service</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="booking">
-                <input class="bookingbtn" type="button" value="Book Now" />
-            </div>
-            <div class="user">
-                <a href="login.html" class="login">Hello, Sign in</a>
-                <a href="order.html" class="order">Order</a>
-                <a href="cart.html" class="cart"
-                   ><i class="fa-regular fa-cart-shopping"></i> Cart</a
-                >
-            </div>
-        </header>
+        <jsp:include page="header.jsp"/>
         <!-- BODY -->
         <div class="body">
             <center>
@@ -136,26 +108,6 @@
             </center>
         </div>
         <!-- FOOTER -->
-        <footer>
-            <div class="container">
-                <div>
-                    <h2>Contact</h2>
-                    <p>Hotline: 012345678</p>
-                    <p>Email: eochanghee@gmail.com</p>
-                </div>
-                <div>
-                    <h2>Location</h2>
-                    <p>S201 - Vinhome Grand Park - District 9 - Ho Chi Minh</p>
-                    <p>S105 - Vinhome Grand Park - District 9 - Ho Chi Minh</p>
-                </div>
-                <div>
-                    <h2>Opening hour</h2>
-                    <p>8 am - 6 pm (7 days)</p>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright © 2024 Neko Hee Hotel</p>
-            </div>
-        </footer>
+        <jsp:include page="footer.html"/>
     </body>
 </html>

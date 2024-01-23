@@ -9,6 +9,7 @@ package dto;
  * @author Admin
  */
 public class CustomerDTO {
+
     private String customerID;
     private String email;
     private String password;
@@ -16,16 +17,13 @@ public class CustomerDTO {
     private String lastName;
     private String phone;
     private int point;
-    private int member;
-    private String city;
-    private String district;
-    private String street;
-    private String number;
+    private String member;
+    private boolean status;
 
     public CustomerDTO() {
     }
-    
-    public CustomerDTO(String customerID, String email, String password, String firstName, String lastName, String phone, int point, int member, String city, String district, String street, String number) {
+
+    public CustomerDTO(String customerID, String email, String password, String firstName, String lastName, String phone, int point, String member, boolean status) {
         this.customerID = customerID;
         this.email = email;
         this.password = password;
@@ -34,10 +32,7 @@ public class CustomerDTO {
         this.phone = phone;
         this.point = point;
         this.member = member;
-        this.city = city;
-        this.district = district;
-        this.street = street;
-        this.number = number;
+        this.status = status;
     }
 
     public String getCustomerID() {
@@ -96,44 +91,20 @@ public class CustomerDTO {
         this.point = point;
     }
 
-    public int getMember() {
+    public String getMember() {
         return member;
     }
 
-    public void setMember(int member) {
+    public void setMember(String member) {
         this.member = member;
     }
 
-    public String getCity() {
-        return city;
+    public boolean isStatus() {
+        return status;
     }
 
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getDistrict() {
-        return district;
-    }
-
-    public void setDistrict(String district) {
-        this.district = district;
-    }
-
-    public String getStreet() {
-        return street;
-    }
-
-    public void setStreet(String street) {
-        this.street = street;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
 }

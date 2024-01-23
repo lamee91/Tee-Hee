@@ -23,6 +23,7 @@ public class DispatchServlet extends HttpServlet {
    private final String HOME_PAGE = "home.jsp";
    private final String LOGIN_CONTROLLER = "LoginServlet";
    private final String REGISTRATION_CONTROLLER = "RegistrationServlet";
+   
    private final String DELETE_CONTROLLER = "DeleteServlet";
    private final String UPDATE_CONTROLLER = "UpdateServlet";
    private final String CREATE_CONTROLLER = "CreateAccountServlet";
